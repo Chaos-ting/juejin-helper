@@ -236,6 +236,7 @@ class CheckIn {
     const juejin = new JuejinHelper();
     try {
       await juejin.login(this.cookie);
+      console.log(this.cookie);
     } catch (e) {
       console.error(e.message);
       throw new Error("登录失败, 请尝试更新Cookies!");
