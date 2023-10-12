@@ -263,6 +263,8 @@ class CheckIn {
     await this.bugfixTask.run();
     await juejin.logout();
     console.log("-------------------------");
+
+    return this.growthTask.todayStatus
   }
 
   toString() {
